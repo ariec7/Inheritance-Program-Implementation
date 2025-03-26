@@ -1,0 +1,21 @@
+
+public class Icecream extends Dessert{
+    private boolean cherry;
+    public Icecream(String name, boolean cherry){
+        super("ice cream", name);
+        this.cherry = cherry;
+    }
+
+    @Override
+    public double getCost(){
+        if(cherry){
+            return super.getCost() + 0.75;
+        }
+        return super.getCost();
+    }
+    @Override
+    public String toString(){
+        return "Your ice cream costed " + getCost() + ". Enjoy!";
+    }
+}
+
