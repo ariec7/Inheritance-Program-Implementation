@@ -1,4 +1,4 @@
-package desserts;
+
 public class Cheesecake extends Dessert{
     private boolean strawberry;
     public Cheesecake(String name, boolean strawberry){
