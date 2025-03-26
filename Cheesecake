@@ -1,0 +1,22 @@
+package desserts;
+public class Cheesecake extends Dessert{
+    private boolean strawberry;
+    public Cheesecake(String name, boolean strawberry){
+        super("cheesecake", name);
+        this.strawberry = strawberry;
+    }
+
+
+    @Override
+    public double getCost() {
+        if(strawberry) {
+            return super.getCost() + 0.99;
+        }
+        return super.getCost();
+    }
+
+    @Override
+    public String toString(){
+        return "Your cheesecake costed " + getCost() + ". Enjoy!";
+    }
+}
