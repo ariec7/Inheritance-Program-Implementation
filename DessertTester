@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class DessertTester {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Would you like a cheesecake or icecream");
+        String dessert = in.nextLine();
+        if(dessert.equals("cheesecake")){
+            System.out.println("What is your name?");
+            String name = in.nextLine();
+            System.out.println("Do you want strawberries?");
+            String strawberries = in.nextLine();
+            if(strawberries.equals("yes")) {
+                Cheesecake c = new Cheesecake(name, true);
+                System.out.println(c);
+            }else{
+                Cheesecake c = new Cheesecake(name, false);
+                System.out.println(c);
+            }
+        }
+        if(dessert.equals("ice cream")){
+            System.out.println("What is your name?");
+            String name = in.nextLine();
+            System.out.println("Do you want cherries?");
+            String strawberries = in.nextLine();
+            if(strawberries.equals("yes")) {
+                Icecream i = new Icecream(name, true);
+                System.out.println(i);
+            }else{
+                Icecream i = new Icecream(name, false);
+                System.out.println(i);
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
