@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class DessertTester {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Would you like a cheesecake or icecream");
+        System.out.println("Would you like a cheesecake or ice cream");
         String dessert = in.nextLine();
         if(dessert.equals("cheesecake")){
             System.out.println("What is your name?");
