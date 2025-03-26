@@ -1,4 +1,5 @@
 
+
 public class Dessert {
     private String type;
     private String name;
@@ -21,7 +22,7 @@ public class Dessert {
     }
 
     public double getCost(){
-        return 6.0;
+        return 6.00;
     }
 
     @Override
