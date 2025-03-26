@@ -17,6 +17,6 @@ public class Cheesecake extends Dessert{
 
     @Override
     public String toString(){
-        return "Your cheesecake costed " + getCost() + ". Enjoy!";
+        return "Your cheesecake costed $" + getCost() + ". Enjoy, "+ getName() + "!";
     }
 }
