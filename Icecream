@@ -15,7 +15,6 @@ public class Icecream extends Dessert{
     }
     @Override
     public String toString(){
-        return "Your ice cream costed " + getCost() + ". Enjoy!";
+        return "Your ice cream costed $" + getCost() + ". Enjoy, "+ getName() + "!";
     }
 }
-
